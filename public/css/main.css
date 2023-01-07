@@ -1,0 +1,56 @@
+:root {
+  --imgheight: 856;
+  --imgwidth: 432;
+  --height: 60vmin;
+  --width: calc((var(--imgwidth) / var(--imgheight) * var(--height)));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0; 
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #1b1c23;
+  border-radius: 50px;
+}
+/* --- --- --- ---- Design */
+input
+{
+    border-radius: 50px;
+}
+  
+img, input {
+  height: 80%;
+  width: 60%;
+  grid-area: 1 / -1;
+  border-radius: 50px;
+}
+  
+input[type="color"]  { 
+  mix-blend-mode: multiply; 
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50px;
+}  
+  /* removes default styling from input color element */
+::-webkit-color-swatch {
+  border: none;
+  transition: background-color 300ms ease-out;
+}
+  
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+  
+::-moz-color-swatch {
+  border: none;
+}
+  
+::-moz-focus-inner {
+  padding: 0;
+}
